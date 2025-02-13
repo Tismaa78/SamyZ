@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
@@ -20,7 +19,7 @@ function Home2() {
               BIENVENUE CHEZ <span className="purple"> SAMY </span>
             </h1>
             <p className="home-about-body">
-              Avec <b className="purple">plus de 5 ans d'expérience</b> dans le graphisme et <b className="purple">plus de 100 clients satisfaits</b>, Samy met son savoir-faire au service de vos projets.
+              Avec <b className="purple">plus de 2 ans d'expérience</b> dans le graphisme et <b className="purple">plus de 100 clients satisfaits</b>, je mettrai mon savoir-faire au service de vos projets.
               <br />
               <br />
               Que ce soit pour un <i><b className="purple">logo percutant</b></i>, un <i><b className="purple">flyer impactant</b></i> ou un <i><b className="purple">filtre unique</b></i>, il vous propose des visuels professionnels et modernes adaptés à vos besoins.
@@ -31,7 +30,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" style={{ maxWidth: "70%" }} />
             </Tilt>
           </Col>
         </Row>
@@ -57,7 +56,6 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-
             </ul>
           </Col>
         </Row>
@@ -65,4 +63,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
